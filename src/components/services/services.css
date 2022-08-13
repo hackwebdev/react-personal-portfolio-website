@@ -30,7 +30,9 @@
   font-size: 1rem;
   text-align: center;
 }
-
+.service__list {
+  padding: 2rem;
+}
 .service__list li {
   display: flex;
   gap: 1rem;
@@ -44,4 +46,23 @@
 
 .service__list p {
   font-size: 0.9rem;
+}
+
+/* Media Queries (medium devices) */
+@media screen and (max-width: 1024px) {
+  .services__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .service {
+    height: auto;
+  }
+}
+/* Media Queries (small devices) */
+@media screen and (max-width: 600px) {
+  .services__container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 }
